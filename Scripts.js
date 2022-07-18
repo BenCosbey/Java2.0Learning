@@ -1,2 +1,3 @@
-let favoriteFood = 'Burger and a Coke';
-document.write(favoriteFood);
+var pokemonList = [
+     "bulbasaur", "2", "grass"
+];

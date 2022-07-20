@@ -13,7 +13,8 @@
 }
 /*navbar styling */
 .navbar{
-	position: fixed;
+	display: flex;
+	align-items: flex-start;
 	width: 100%;
 	padding: 15px 0;
 	background-color: rgb(255, 191, 0);
@@ -34,6 +35,13 @@
 	display: inline-block;
 }
 .navbar .menu li a{
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+}
+.section1 {
+	background-color: red;
 	color: white;
 	font-size: 18px;
 	font-weight: 500;

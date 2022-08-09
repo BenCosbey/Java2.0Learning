@@ -1,78 +1,108 @@
 
-.button-class {
-  list-style-type: none;
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid #4caf50;
+/* format container */
+.container-fluid, .pokemonList, .header-section {
+  margin: 25px;
 }
 
-
-html, 
-body {
-  font-family: Arial, sans-serif;
-}
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
+html, body {
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  
-  /* to show it above other content */
-  z-index: 999; 
-  
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto; 
-  
-  /* this is used to center the modal */
-  display: grid;
+  display: flex;
+}
+
+.app-title, p {
+  display: inline-block;
+}
+
+.pokemon-list {
   text-align: center;
 }
 
-.modal {
-  margin: auto;
+.fix__top {
+    position:fixed;
+    top:0px;
+}
+
+.fix__bottom {
+    position:fixed;
+    bottom:0px;
+    height: 2rem;
+}
+
+.body-section {
+  position: absolute;
+  top: 7rem;
+  bottom: 7rem;
+  right: 0;
+  left: 0;
+  overflow: auto;
+}
+
+/* format header section */
+.app-title {
+  padding-left: 3px;
+}
+
+.header-section {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* format buttons */
+button, .button  {
+  border: none;
   display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
+  width: 30%;
+  text-decoration: none;
+  transition: opacity 0.5s;
 }
 
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
+button:hover, button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.4;
 }
 
-.modal h1 {
-  margin-top: 0;
+/* format list items */
+.pokemon-list {
+  list-style-type: none;
 }
 
-.modal p {
-  margin-bottom: 0;
+.pokemon-list li {
+  margin: 0;
+  padding: 7px;
+}
+
+/* make responsive on all screen sizes */
+@media all and (min-width: 750px) {
+  button,
+  .button {
+    width: 25%;
+  }
+  .fix__bottom {
+    width: 100%;
+  }
+  .header-section {
+    width: 95%;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  button, .button {
+    width: 50%;
+  }
+  .header-section {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  button, .button {
+    width: 65%;
+  }
+  .header-section {
+    height: 70%;
+  }
 }

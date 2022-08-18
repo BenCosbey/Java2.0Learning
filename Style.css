@@ -97,7 +97,7 @@ button:hover, button:focus,
     width: 80%;
   }
 }
-
+//sizing changes movement
 @media all and (max-width: 500px) {
   button, .button {
     width: 65%;

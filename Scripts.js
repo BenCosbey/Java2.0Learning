@@ -127,7 +127,7 @@ let pokemonRepository = (function() {
 })();
 
 pokemonRepository.loadList().then(function() {
-  // use forEach to write pokemon data to DOM
+  // written for dom
   pokemonRepository.getAll().forEach(function(item) {
     //write pokemon name as button to DOM
     pokemonRepository.addListItem(item);

@@ -1,7 +1,7 @@
 // pokedex; consist of 150 original pkmn. Each pkmn has a list of attributes found in .js file
 attributes listed
   found on line 54
-      let nameElement = $('<h1>' + capitalize(item.name) + '</h1>');
+     // let nameElement = $('<h1>' + capitalize(item.name) + '</h1>');
       let heightElement = $('<div>' + '<p>' + 'Height: ' + item.height + '</p>' + '</div>');
       let typeElement = $('<div>' + '<p>' + 'Type(s): ' + item.types + '</p>' + '</div>');
       let abilitiesElement = $('<div>' + '<p>' + 'Abilities: ' + item.abilities + '</p>' + '</div>');

@@ -7,4 +7,4 @@ attributes listed
       API is used found on line 6 listed below
       apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
       
-      Main take away is how to use an API and display the information in another window through java instead of using HTML and CSS only.
+      Main take away is how to use an API and display the information on the site using .js
